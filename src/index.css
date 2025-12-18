@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background: linear-gradient(120deg, #4facfe,#82845d);
+  font-family: 'Poppins', sans-serif;
+}
+
+.todolist-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo-card {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(12px);
+  padding: 30px;
+  border-radius: 15px;
+  width: 400px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}

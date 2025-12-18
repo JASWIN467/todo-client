@@ -1,0 +1,17 @@
+.TodoList{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;;
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.button{
+    width: 200px;
+}
