@@ -53,7 +53,7 @@ const TodoList = () => {
     }
 
     try {
-      await axios.post("http://localhost:5000/csbs/addtodo", { todo });
+      await axios.post("https://todo-server-ec2-jd40.onrender.com/csbs/addtodo", { todo });
 
       setTodo("");            // clear input
       setStatus(true);        // show success alert
@@ -69,7 +69,7 @@ const TodoList = () => {
   // 🚀 Fetch Todo List  
   const getTodo = async () => {
     try {
-      const response = await axios.get("http://localhost:5000/csbs/gettodo");
+      const response = await axios.get("https://todo-server-ec2-jd40.onrender.com/csbs/gettodo");
       setTodoArray(response.data);
     } catch (err) {
       console.error("GET TODO ERROR:", err);
@@ -80,7 +80,7 @@ const TodoList = () => {
   const deleteTodo = async (id) => {
     try {
       console.log('Deleting todo with ID:', id);
-      await axios.delete(`http://localhost:5000/csbs/deletetodo/${id}`);
+      await axios.delete(`https://todo-server-ec2-jd40.onrender.com/csbs/deletetodo/${id}`);
       getTodo(); // refresh list
       console.log('Todo deleted successfully');
     } catch (err) {
